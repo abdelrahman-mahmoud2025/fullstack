@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior:smooth;
+}
+aside {
+    width: 250px;
+    background-color: #f4f4f4;
+    border-left: 1px solid #ddd;
+    position: fixed;
+    height: 100vh;
+    overflow-y: auto;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+aside.hidden {
+    transform: translateX(100%);
+}
+.content {
+    margin-left: 250px;
+    padding: 20px;
+    width: 100%;
+}
+.toggle-btn {
+    display: none;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 1000;
+}
+.dropdown {
+    margin-bottom: 15px;
+}
+.dropdown button {
+    width: 100%;
+    background-color: #ddd;
+    border: none;
+    padding: 10px;
+    text-align: right;
+    cursor: pointer;
+}
+.dropdown-content {
+    display: none;
+    margin-top: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+.dropdown-content a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    padding: 5px 0;
+}
+.dropdown-content a:hover {
+    color: #007bff;
+}
+@media screen and (max-width: 768px) {
+    aside {
+        transform: translateX(100%);
+    }
+    aside.hidden {
+        transform: translateX(0);
+    }
+    .toggle-btn {
+        display: block;
+    }
+    .content {
+        margin-left: 0;
+    }
+}
+.container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 0.5em;
+    border-bottom: 4px solid #333; /* خط تحت العنوان */
+}
+header p {
+    font-size: 1em;
+}
+section {
+    padding: 30px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* إضافة ظل خفيف */
+}
+section h2 {
+    font-size: 1.8em;
+    color: #4CAF50;
+    border-bottom: 2px solid #4CAF50; /* خط تحت العنوان */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+section p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+ul {
+    font-size: 1.1em;
+    margin: 20px 0;
+}
+ul li {
+    margin: 10px 0;
+}
+.cards-container {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 20px;
+}
+.card {
+background-color: white;
+border-radius: 8px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+width: 250px;
+overflow: hidden;
+text-align: center;
+}
+.card img {
+width: 100%;
+height: 250px;
+object-fit: cover;
+}
+.card h3 {
+background-color: #4CAF50;
+color: white;
+padding: 10px;
+margin: 0;
+}
+.card p {
+padding: 10px;
+font-size: 14px;
+color: #555;
+}
+.card .btn {
+display: inline-block;
+margin: 10px;
+padding: 10px 20px;
+background-color: #4CAF50;
+color: white;
+text-decoration: none;
+border-radius: 4px;
+}
+.card .btn:hover {
+background-color: #45a049;
+}
+.disactive{
+    color: #fff;
+    background-color: #333 !important;
+}
+footer {
+    text-align: center;
+    padding: 5px;
+    background-color: #333;
+    color: white;
+    width: 100%;
+    bottom: 0;
+    font-size: 1em;
+}
+
+
+/* Perfect Team */
+
+.perfect-team-content {
+    position: relative;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.perfect-card .image {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+}
+
+.perfect-card .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #000;
+}
+
+.perfect-card {
+    position: relative;
+    background: #000;
+    border: 3px solid #4CAF50;
+    border-radius: 20px;
+}
+
+.perfect-card::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #4CAF50;
+    clip-path: circle(55% at 0 0);
+    border-top-left-radius: 10px;
+}
+
+.perfect-card .card-content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.perfect-card .name-profession {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+    color: #fff;
+}
+
+.name-profession .name {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.name-profession .profession {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.perfect-card .rating {
+    display: flex;
+    align-items: center;
+    margin-top: 18px;
+}
+
+.perfect-card .rating i {
+    font-size: 18px;
+    color: #4CAF50;
+    margin: 0 2px;
+}
+
+

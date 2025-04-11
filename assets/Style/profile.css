@@ -1,0 +1,91 @@
+/* Try hovering and changing the height/width */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body,
+html {
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+header{
+    width: 95%;
+    height: 400px;
+    margin: 0 auto;
+    background: url(assets/img/st-banner.jpeg) no-repeat center center/cover;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    position: relative;
+}
+.student-data {
+    position: absolute;
+    bottom: -20px;
+    right: 50%;
+    transform: translateX(50%);
+    padding: 20px;
+    border-radius: 10px;
+}
+.student-data h3{
+    font-size: 25px;
+    font-weight: bold;
+    color: #000;
+    background-color: #45a049;
+    padding: 10px;
+    border-radius: 10px;
+}
+.student-data img{
+    width: 250px;
+    border-radius: 50%;
+    border: 2px solid #45a049;
+}
+.st-card{
+    width: 400px;
+    height: 300px;
+    border-radius: 20px;
+}
+
+
+
+/*  */
+.container {
+    display: flex;
+    width: 100%;
+    padding: 4% 2%;
+    box-sizing: border-box;
+    height: 100vh;
+}
+.box {
+    flex: 1;
+    overflow: hidden;
+    transition: 0.5s;
+    margin: 0 2%;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, .1);
+    line-height: 0;
+}
+.box > img {
+    width: 200%;
+    height: calc(100% - 10vh);
+    object-fit: cover;
+    transition: 0.5s;
+}
+.box > span {
+    font-size: 3.8vh;
+    display: block;
+    text-align: center;
+    height: 10vh;
+    line-height: 2.6;
+}
+.box:hover {
+    flex: 1 1 50%;
+}
+.box:hover > img {
+    width: 100%;
+    height: 100%;
+}

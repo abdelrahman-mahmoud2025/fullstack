@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../img/LW6.png">
+    <title>Session 1</title>
+    <link rel="stylesheet" href="../Style/content.css">
+</head>
+<body> 
+<!-- Start Header -->
+    <header id="top">
+        <a href="../../index.html">Batch 110</a>
+    </header>
+<!-- End Header -->
+<!-- Start Nav -->
+    <nav>
+        <a href="../../index.html" class="btn">Home / </a>
+        <a class="btn active" >Session 1 /</a>
+        <a class="btn disactive" >Session 2 /</a>
+        <a class="btn disactive">Session 3 /</a>
+        <a class="btn disactive">Session 4 /</a>
+    </nav>
+<!-- End Nav -->
+
+<!-- Start Container -->
+    <div class="container">
+        <!-- Start Aside -->
+        <aside>
+            <div>
+                <h2>اختصاراتك</h2>
+            </div>
+            <a href="#intro">مقدمة إلى HTML</a>
+            <a href="#tools">الأدوات</a>
+            <a href="#syntax">هيكل كود HTML</a>
+            <a href="#headings">العناوين</a>
+            <a href="#paragraphs">الفقرات</a>
+            <a href="#links">الروابط</a>
+            <a href="#images">الصور</a>
+        </aside>    
+        <!-- End Aside -->
+        
+        <!-- Start Main -->
+        <main>
+            <!-- Start content -->
+            <section id="content">
+                <!-- Start start-intro -->
+                <section id="start-intro" style="text-align: center;">
+                    <h1>Session 1</h1>
+                    <p>أهلاً بيكم في أول سيشن من الكورس! النهاردة هنتعرف على الأساسيات المهمة لتصميم المواقع باستخدام HTML. هنتناول مع بعض مقدمة شاملة عن HTML، ونشرح إزاي تستخدم الأدوات اللي هتساعدك في كتابة الأكواد.
+
+                        هنبدأ من البداية، ونتعلم هيكل كود HTML، اللي هو الأساس في بناء أي صفحة ويب. كمان هنشوف مع بعض إزاي نضيف العناوين و الفقرات بشكل صحيح، وهنعرف إزاي ننظم الروابط و الصور داخل الصفحات.
+                        
+                        النهاردة هتكون خطوة مهمة لبناء موقعك الأول، خلونا نبدأ الرحلة!</p>
+                </section>
+                <!-- End start-intro -->
+
+                <!-- Start Intro -->
+                <section id="intro">
+                    <h1>مقدمة إلى HTML</h1>
+                    <p>HTML هي اللغة اللي بنستخدمها عشان نبني صفحات الويب، زي الأساس اللي بنبني عليه البيت. من غيرها، الصفحة مش هيبقى ليها أي هيكل أو شكل. باستخدام HTML، بنقدر نحدد كل حاجة في الصفحة زي العناوين، النصوص، الصور، واللينكات اللي بتربط صفحات ببعضها.
+
+                        تقدر تعتبر HTML زي علبة أدواتك اللي من خلالها بتحدد كل عنصر مكانه في الصفحة. العناصر دي زي الطوب في البناء، وكل حاجة ليها شكل معين عشان لما تيجي تفتحها في المتصفح تطلع مظبوطة.
+                        
+                        دلوقتي لما نبدأ نشتغل على الكود، هنشوف إن كل عنصر في HTML بيتكون من حاجة اسمها Tag، وعادةً بيكون عندنا Opening Tag لبدء العنصر وClosing Tag لإنهاء العنصر. ماعدا بعض العناصر البسيطة اللي ما بيبقاش ليها قفل زي الصور.</p>
+                </section>
+                <!-- End Intro -->
+
+                <!-- Start tools -->
+                <section id="tools">
+                    <h2>الأدوات المستخدمة</h2>
+                    <p>عشان تبدأ شغلك كمطور ويب هتحتاج شوية أدوات وإضافات تسهّل عليك العمل وتحسن من شغلك.</p>
+                    
+                    <h3>1. الأدوات الأساسية:</h3>
+                    <ul>
+                        <li><strong>Visual Studio Code:</strong> برنامج تحرير الكود المجاني والأشهر بين المطورين. <a href="https://code.visualstudio.com/" class="content-btn">Download VS code</a></li>
+                        <li><strong>متصفح ويب حديث:</strong> زي Google Chrome أو Brave لتجربة الأكواد. <a href="https://www.google.com/chrome/" class="content-btn">Download Chrome</a> / <a href="https://brave.com/download/" class="content-btn">Download Brave</a></li>
+                        <li><strong>Node.js:</strong> لو محتاج تشغيل سكربتات جافاسكريبت أو إدارة حزم <a href="https://nodejs.org/en/download/package-manager" class="content-btn">Download Node.js</a> npm. </li>
+                        <li><strong>Git:</strong> لإدارة الأكواد ومتابعة التعديلات باستخدام GitHub أو <a href="https://git-scm.com/downloads" class="content-btn">Download Git</a> GitLab.</li>
+                    </ul>
+                
+                    <h3>2. الإضافات المهمة لـ VS Code:</h3>
+                    <ul>
+                        <li><strong>Live Server:</strong> بيفتح لك صفحة ويب مباشرة من الكود بتاعك ويعمل تحديث تلقائي عند تعديل الملفات.</li>
+                        <li><strong>Prettier:</strong> أداة لتنسيق الكود بشكل أوتوماتيكي، وبتساعدك تحافظ على ترتيب الكود.</li>
+                        <li><strong>Rainbow Brackets:</strong> لتلوين الأقواس المتطابقة، علشان تسهل عليك قراءة الكود.</li>
+                        <li><strong>Auto Rename Tag:</strong> بيغير اسم التاج المقابل تلقائيًا لما تعدل التاج المفتوح أو المغلق.</li>
+                        <li><strong>Material Icon Theme:</strong> لإضافة أيقونات جذابة للملفات.</li>
+                    </ul>
+                
+                    <h3>3. نصائح لتحسين العمل:</h3>
+                    <ul>
+                        <li>استخدم لوحة المفاتيح بشكل مكثف واعتمد على الاختصارات لتوفير الوقت.</li>
+                        <li>قسّم مشروعك إلى ملفات ومجلدات منظمة لتسهيل الوصول والصيانة.</li>
+                        <li>تابع التحديثات الجديدة للإضافات والأدوات لضمان أفضل أداء.</li>
+                        <li>جرّب الإضافات المختلفة وشوف اللي يناسب طريقة شغلك.</li>
+                    </ul>
+                </section>
+                <!-- Start tools -->
+
+                <!-- Start Syntax -->
+                <section id="syntax">
+                    <h2>طريقة كتابة كود HTML</h2>
+                    <p>يتكون أي كود HTML من (Tags). كل كود له:</p>
+                    <ul>
+                        <li><strong>Opening Tag:</strong> هو الكود اللي بيبدأ العنصر (مثل <code>&lt;p&gt;</code>).</li>
+                        <li><strong>Closing Tag:</strong> هو الكود اللي بينهي العنصر (مثل <code>&lt;/p&gt;</code>).</li>
+                    </ul>
+                    <p>الكود بين الافتتاح والإغلاق هو المحتوى اللي بيظهر للمستخدم.</p>
+                    <pre>
+                        &lt;p&gt;هذا مثال على الفقرة.&lt;/p&gt;
+                    </pre>
+                    <div class="con-centr">
+                        <img src="../img/open.png" alt="Example" width="100%">
+                    </div>
+                </section>
+                <!-- End Syntax -->
+
+                <!-- Start Headings -->
+                <section id="headings">
+                    <h2>العناوين (Headings)</h2>
+                    <p>HTML بيوفر 6 مستويات من العناوين من <code>&lt;h1&gt;</code> إلى <code>&lt;h6&gt;</code>. كل ما الرقم زاد، حجم العنوان بيقل.</p>
+                    <pre>
+                        &lt;h1&gt;عنوان رئيسي&lt;/h1&gt;
+                        &lt;h2&gt;عنوان فرعي&lt;/h2&gt;
+                    </pre>
+                    <div class="con-centr">
+                        <img src="../img/heding.png" alt="heding">
+                    </div>
+                </section>
+                <!-- End Headings -->
+
+                <!-- Start Paragraphs -->
+                <section id="paragraphs">
+                    <h2>الفقرات (Paragraphs)</h2>
+                    <p>لإضافة نصوص في صفحة الويب، بنستخدم الكود <code>&lt;p&gt;</code>. الفقرات مهمة جدًا علشان تنظم المحتوى وتخلي النص سهل القراءة للمستخدم. الكود ده بيضيف مسافة تلقائية فوق وتحت النص عشان الفقرة تبقى واضحة ومنفصلة عن باقي العناصر. لو عايز تضيف أكتر من فقرة، ببساطة كرر الكود ده مع النصوص اللي عايز تعرضها.</p>
+                    <p>مثال: لو عايز تكتب جملة زي "مرحبًا بكم في موقعنا!"، هتكتبها بين <code>&lt;p&gt;</code> و<code>&lt;/p&gt;</code> كده:</p>
+                    <pre>
+                    &lt;p&gt;مرحبًا بكم في موقعنا!&lt;/p&gt;
+                    </pre>
+                    <p>وده هيظهر كفقرة منفصلة في المتصفح.</p>
+                </section>
+                <!-- End Paragraphs -->
+
+                <!-- Start Links -->
+                <section id="links">
+                    <h2>الروابط (Links)</h2>
+                    <p>لإضافة رابط في HTML بنستخدم الكود <code>&lt;a&gt;</code> مع الخاصية <code>href</code> علشان نحدد الرابط اللي هيروح ليه المستخدم لما يضغط عليه. الرابط بيكون موجود بين وسم <code>&lt;a&gt;</code> و <code>&lt;/a&gt;</code>. تقدر تكتب النص اللي عايز يعرض للمستخدم، واللي هيتحول ليه لما يضغط عليه.</p>
+                    <p>مثال: لو عايز تضيف رابط لموقع Example، تكتب الكود ده:</p>
+                    <pre>
+                    &lt;a href="https://www.example.com"&gt;اذهب إلى Example&lt;/a&gt;
+                    </pre>
+                    <p style="text-align: center;"><a href="https://www.example.com">اذهب إلى Example</a></p>
+                    <p>في المثال ده، الرابط هيتعرض في نفس السطر مع النص التاني، وده بيدي تصميم أنظف وأبسط. لما المستخدم يضغط على الرابط، هيفتح الموقع في صفحة جديدة.</p>
+                    
+                    <h3>الخصائص الإضافية للرابط:</h3>
+                    <p>الرابط في HTML مش بس بيتحكم فيه <code>href</code>، كمان ممكن نضيف ليه بعض الخصائص علشان نتحكم في سلوكه وتصميمه بشكل أكبر. هنا بعض الخصائص الشائعة:</p>
+                    
+                    <ul>
+                        <li><strong>target</strong>: دي بتحدد إذا كان الرابط هيفتح في نفس الصفحة أو في نافذة جديدة. القيمة الشائعة هي:
+                            <ul>
+                                <li><code>_blank</code>: بيفتح الرابط في نافذة أو تاب جديدة (مناسبة علشان تفتح الروابط في نافذة جديدة).</li>
+                                <li><code>_self</code>: بيفتح الرابط في نفس الصفحة (دي القيمة الافتراضية).</li>
+                            </ul>
+                        </li>
+                        <li><strong>title</strong>: بتعرض معلومات إضافية عن الرابط لما المستخدم يشاور عليه (يقف عليه بلماوس) . ده بيدي تفاصيل أكتر عن الرابط.
+                            <ul>
+                                <li><code>title="رابط لموقع Example"</code>: ده بيوضح للمستخدم لما يشاور عليه (يقف عليه بلماوس) على الرابط إن ده رابط لموقع Example.</li>
+                            </ul>
+                        </li>
+                        <li><strong>rel</strong>: دي بتحدد العلاقة بين الرابط والصفحة اللي فيها الرابط. من أهم القيم:
+                            <ul>
+                                <li><code>nofollow</code>: بتخلي محركات البحث متخدش الرابط ده في الحسبان. لو الموقع ده مش موثوق أو مش عايز محركات البحث تتابع الرابط.</li>
+                                <li><code>noopener</code>: بيحسن الأمان لما تفتح رابط في نافذة جديدة.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    
+                    <p>ممكن تدمج الخصائص دي مع بعض علشان تحصل على رابط يتصرف زي ما انت عايز. زي المثال ده:</p>
+                    <pre>
+                    &lt;a href="https://www.example.com" target="_blank" title="رابط لموقع Example" rel="noopener"&gt;اذهب إلى Example&lt;/a&gt;
+                    </pre>
+                    <p>الخصائص دي بتساعدك تتحكم أكتر في سلوك الروابط وتحسن تجربة المستخدم على موقعك.</p>                    
+                </section>
+                <!-- End Links -->
+
+                <!-- Start Images -->
+                <section id="images">
+                    <h2>الصور (Images)</h2>
+                    <p>لإضافة صورة في HTML بنستخدم الكود <code>&lt;img&gt;</code>. الكود ده مش زي أي وسم تاني، ملوش <strong>Closing Tag</strong>، يعني مفيش <code>&lt;/img&gt;</code>. بدل كده بنضيف بعض الخصائص اللي بتساعدنا نحدد الصورة والمعلومات اللي ليها.</p>
+
+                    <h3>الخصائص الأساسية للصورة:</h3>
+                    <ul>
+                        <li><strong>src</strong>: دي بتحدد مصدر الصورة (URL) يعني فين الصورة موجودة. ممكن تكون صورة على الموقع بتاعك أو على الإنترنت.</li>
+                        <li><strong>alt</strong>: دي بتضيف نص بديل للصورة في حالة ما لو الصورة ما اتحملتش أو لو كان المستخدم بيستخدم قارئ شاشة (للذوي الهمم). النص ده بيوضح الصورة بشكل بسيط.</li>
+                        <li><strong>width</strong> و <strong>height</strong>: لو حبيت تحدد حجم الصورة، ممكن تضيف الخصائص دي علشان تحدد العرض والارتفاع بالبكسل.</li>
+                    </ul>
+
+                    <p>مثال: لو عايز تضيف صورة على الموقع، تكتب الكود ده:</p>
+
+                    <pre>
+                    &lt;img src="https://www.example.com/image.jpg" alt="صورة لمنتج Example" width="300" height="200"&gt;
+                    </pre>
+
+                    <p>في المثال ده:</p>
+                    <ul>
+                        <li>الصورة هتكون موجودة في الرابط <code>https://www.example.com/image.jpg</code>.</li>
+                        <li>النص البديل هو <code>صورة لمنتج Example</code>، وده هيظهر لو الصورة مش راضية تظهر.</li>
+                        <li>حجم الصورة هيكون 300 بكسل عرض و 200 بكسل ارتفاع.</li>
+                    </ul>
+
+                    <p>ممكن تدمج كل الخصائص دي مع بعض علشان تحصل على صورة متناسقة بتناسب تصميم موقعك.</p>
+                </section>
+                <!-- End Images -->
+            </section>
+            <!-- End Content -->
+        </main>
+        <!-- End Main -->
+    </div>
+    <!-- End Container -->
+    <!-- Start Footer -->
+    <footer>
+        <p>&copy; 2024 <a href="https://www.facebook.com/profile.php?id=100009522672475" style="color: goldenrod; text-decoration: none;">Abdelrahman Mahmoud</a>. جميع الحقوق محفوظة.</p>
+    </footer>
+    <!-- End Footer -->
+    <!-- up btn -->
+    <a href="#top" id="backToTop">↑ أعلى</a>
+</body>
+</html>
