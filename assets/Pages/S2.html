@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Session 2</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/LW6.png">
+
+        <link rel="stylesheet" href="../Style/content.css">
+    </head>
+<body> 
+    <!-- Start Header -->
+    <header id="top">
+        <a href="../../index.html">CODE 2 Z</a>
+    </header>
+    <!-- End Header -->
+    <!-- Start Nav -->
+    <nav>
+        <a href="../../index.html" class="btn">Home / </a>
+        <a href="S1.html" class="btn">Session 1 /</a>
+        <a class="btn active">Session 2 /</a>
+        <a href="S3.html" class="btn">Session 3 /</a>
+        <a href="S4.html" class="btn">Session 4 /</a>
+    </nav>
+    <!-- End Nav -->
+    <!-- Start Container -->
+    <div class="container">
+        <!-- Start Aside -->
+        <aside>
+            <div>
+                <h2>اختصاراتك</h2>
+            </div>
+            <a href="#lists">القوائم</a>
+            <a href="#tables">الجداول</a>
+            <a href="#text-formatting">Text Formatting</a>
+            <a href="#forms">النماذج المتقدمة</a>
+            <a href="#colors">الألوان والخلفيات</a>
+        </aside>    
+        <!-- End Aside -->
+        <!-- Start Main -->
+        <main>
+            <!-- Start content -->
+            <section id="content">
+
+                <!-- Start start-intro -->
+                <section id="start-intro" style="text-align: center;">
+                    <h1>Session 2</h1>
+                    <p>أهلاً بيكم في السيشن التانية من الكورس!
+
+                        النهاردة هنكمّل رحلتنا مع HTML & CSS وهنتعمق أكتر في أساسيات تصميم المواقع. هنتكلم عن القوائم والجداول وإزاي نستخدمهم بشكل احترافي في تنظيم المحتوى، وكمان هنتعلم تنسيق الألوان والخلفيات لإضافة لمسة جمالية.
+                        
+                        مش بس كده، هنبدأ في النماذج المتقدمة عشان نعرف إزاي نعمل فورمات تفاعلية، وهنتعرف على خصائص العرض والارتفاع والمساحات اللي هتساعدنا في ترتيب العناصر بشكل مظبوط على الصفحة.
+                        
+                        النهاردة هنخوض في تفاصيل أكتر عشان نقدر نصمم بشكل احترافي ومرن. يلا نبدأ!</p>
+                </section>
+                <!-- End start-intro -->
+
+                <!-- Start Lists -->
+                <section id="lists">
+                    <h1>القوائم</h1>
+                    <p>تستخدم القوائم لتنظيم المحتوى. هناك نوعان رئيسيان:</p>
+                    <ul>
+                        <li><strong>1- القوائم المرتبة (Ordered Lists):</strong><br>النوع ده بيعرض العناصر بشكل مترتّب، يعني لو فيه خطوات لازم تمشي عليها بالترتيب، زي مثلاً خطوات تسجيل الدخول أو تحضير وصفة. العناصر هنا بيبقى قدامها أرقام (1، 2، 3) أو حروف (A، B، C) عشان يوضح الترتيب.</li>
+                        <li><strong>2- القوائم غير المرتبة (Unordered Lists):</strong><br>النوع ده بيستخدم لما تكون العناصر مش محتاجة ترتيب معين، زي لو بتكتب قائمة بمميزات منتج أو مكونات أكلة. العناصر بتظهر بنقاط (Bullets) أو رموز عادية.</li>
+                    </ul>
+                    <pre>
+                        &lt;!-- قائمة مرتبة - بتظهر العناصر بأرقام متسلسلة --&gt;
+                        &lt;ol&gt;
+                            &lt;li&gt;فتح التطبيق&lt;/li&gt;
+                            &lt;li&gt;تسجيل الدخول&lt;/li&gt;
+                            &lt;li&gt;اختيار القسم المطلوب&lt;/li&gt;
+                        &lt;/ol&gt;
+                        
+                        &lt;!-- قائمة غير مرتبة - بتظهر العناصر بنقاط بدون ترتيب معين --&gt;
+                        &lt;ul&gt;
+                            &lt;li&gt;شاي&lt;/li&gt;
+                            &lt;li&gt;قهوة&lt;/li&gt;
+                            &lt;li&gt;عصير&lt;/li&gt;
+                        &lt;/ul&gt;
+                        
+                        &lt;!-- قائمة مرتبة - بترتيب أبجدي بدل الأرقام --&gt;
+                        &lt;ol type="A"&gt;
+                            &lt;li&gt;تحميل الكتاب&lt;/li&gt;
+                            &lt;li&gt;قراءة المقدمة&lt;/li&gt;
+                            &lt;li&gt;مراجعة الفصول المهمة&lt;/li&gt;
+                        &lt;/ol&gt;
+                        
+                        &lt;!-- قائمة غير مرتبة - باستخدام رموز مختلفة --&gt;
+                        &lt;ul style="list-style-type: square;"&gt;
+                            &lt;li&gt;مزايا المنتج&lt;/li&gt;
+                            &lt;li&gt;عيوب المنتج&lt;/li&gt;
+                            &lt;li&gt;آراء العملاء&lt;/li&gt;
+                        &lt;/ul&gt;
+                        </pre>
+                        <img src="../img/ul&ol.png" alt="Example">
+                </section>
+                <!-- End Lists -->
+                <!-- Start Tables -->
+                <section id="tables">
+                    <h1>الجداول في HTML</h1>
+                    <p>الجداول في HTML بتستخدم علشان تعرض البيانات بشكل مرتب وسهل للقراءة. الجدول بيكون مكون من صفوف وأعمدة، وكل صف فيه خلايا بتحتوي على بيانات معينة.</p>
+
+                    <h3>أجزاء الجدول:</h3>
+                    <ul>
+                        <li><strong>&lt;table&gt;</strong>: ده العنصر الأساسي اللي بيحتوي على الجدول.</li>
+                        <li><strong>&lt;tr&gt;</strong>: ده العنصر الخاص بكل صف في الجدول.</li>
+                        <li><strong>&lt;td&gt;</strong>: ده العنصر اللي بيمثل الخلية داخل الصف.</li>
+                        <li><strong>&lt;th&gt;</strong>: ده العنصر اللي بيستخدم علشان عنوان الأعمدة (يعني العناوين اللي فوق كل عمود).</li>
+                    </ul>
+
+                    <h3>مثال تطبيقي:</h3>
+                    <p>نفترض إنك عايز تعرض بيانات عن المهام اللي على المنصة بتاعتك زي اسم المهمة، نوع المهمة، وتاريخ البداية.</p>
+
+                    <pre>
+                    &lt;table border="1"&gt;
+                        &lt;thead&gt;
+                            &lt;tr&gt;
+                                &lt;th&gt;اسم المهمة&lt;/th&gt;
+                                &lt;th&gt;نوع المهمة&lt;/th&gt;
+                                &lt;th&gt;تاريخ البداية&lt;/th&gt;
+                            &lt;/tr&gt;
+                        &lt;/thead&gt;
+                        &lt;tbody&gt;
+                            &lt;tr&gt;
+                                &lt;td&gt;مراجعة النصوص&lt;/td&gt;
+                                &lt;td&gt;كتابة&lt;/td&gt;
+                                &lt;td&gt;12-12-2024&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td&gt;ترجمة مقال&lt;/td&gt;
+                                &lt;td&gt;ترجمة&lt;/td&gt;
+                                &lt;td&gt;15-12-2024&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td&gt;تصميم شعار&lt;/td&gt;
+                                &lt;td&gt;تصميم&lt;/td&gt;
+                                &lt;td&gt;18-12-2024&lt;/td&gt;
+                            &lt;/tr&gt;
+                        &lt;/tbody&gt;
+                    &lt;/table&gt;
+                    </pre>
+                    <img src="../img/table.png" alt="Example">
+                    <h3>شرح الكود:</h3>
+                    <ul>
+                        <li><strong>&lt;table border="1"&gt;</strong>: بيحدد الجدول مع حدود بسيطة.</li>
+                        <li><strong>&lt;thead&gt;</strong>: ده الجزء اللي بيحتوي على عناوين الأعمدة.</li>
+                        <li><strong>&lt;tr&gt;</strong>: ده الصف اللي فيه البيانات أو العناوين.</li>
+                        <li><strong>&lt;th&gt;</strong>: ده العنوان الخاص بكل عمود.</li>
+                        <li><strong>&lt;tbody&gt;</strong>: ده الجزء اللي بيحتوي على بيانات الجدول نفسها.</li>
+                        <li><strong>&lt;td&gt;</strong>: ده اللي بيحتوي على البيانات داخل كل خلية.</li>
+                    </ul>
+
+                    <h3>ليه نستخدم الجداول؟</h3>
+                    <ul>
+                        <li>علشان نعرض البيانات بشكل مرتب.</li>
+                        <li>بتسهل على المستخدمين إنهم يقرؤوا البيانات ويشوفوا التفاصيل بوضوح.</li>
+                        <li>ممكن تضيف تنسيقات بسيطة زي الحدود أو تغيير الألوان علشان تخلي الجدول شكله أحسن.</li>
+                    </ul>
+                </section>
+                <!-- End Tables -->
+                <!-- Start Form -->
+                <section id="forms">
+                    <h1>النماذج في HTML</h1>
+                    <p>النماذج بتستخدم علشان تجيب معلومات من المستخدمين، زي اسم المستخدم، البريد الإلكتروني، أو معلومات تانية. هنشرح كذا نوع من النماذج مع الأمثلة.</p>
+                
+                    <!-- نموذج تسجيل الدخول -->
+                    <h2>1- نموذج تسجيل الدخول</h2>
+                    <p>النموذج ده بيستخدم علشان يسمح للمستخدمين بتسجيل الدخول للموقع. بيتطلب من المستخدم يدخل اسم المستخدم وكلمة السر.</p>
+                    <form action="#" method="post">
+                        <label for="username">اسم المستخدم:</label>
+                        <input type="text" id="username" name="username" required><br><br>
+                        
+                        <label for="password">كلمة السر:</label>
+                        <input type="password" id="password" name="password" required><br><br>
+                        
+                        <input type="submit" value="دخول">
+                    </form>
+                
+                    <pre>
+                    &lt;!-- ده الكود الخاص بنموذج تسجيل الدخول --&gt;
+                    &lt;form action="#" method="post"&gt;
+                        &lt;label for="username"&gt;اسم المستخدم:&lt;/label&gt;
+                        &lt;input type="text" id="username" name="username" required&gt;&lt;br&gt;&lt;br&gt;
+                        
+                        &lt;label for="password"&gt;كلمة السر:&lt;/label&gt;
+                        &lt;input type="password" id="password" name="password" required&gt;&lt;br&gt;&lt;br&gt;
+                        
+                        &lt;input type="submit" value="دخول"&gt;
+                    &lt;/form&gt;
+                    </pre>
+                    <p><strong>شرح:</strong></p>
+                    <ul>
+                        <li><strong>&lt;form&gt;:</strong> ده العنصر الأساسي في النموذج، وهو بيحدد بداية ونهاية النموذج. خاصية <strong>action</strong> بتحدد فين البيانات هتروح بعد ما المستخدم يضغط على زرار <strong>submit</strong>. خاصية <strong>method</strong> بتحدد الطريقة اللي هتتم بيها عملية الإرسال، زي "POST" هنا.</li>
+                        <li><strong>&lt;label&gt;:</strong> العنصر ده بيستخدم لكتابة النص المفسر عن الحقل، زي "اسم المستخدم" أو "كلمة السر".</li>
+                        <li><strong>&lt;input&gt;:</strong> العنصر ده بيستخدم لإنشاء الحقول اللي المستخدم هيكتب فيها. النوع هنا <strong>text</strong> لاسم المستخدم، و<strong>password</strong> لكلمة السر (علشان يبانوا كعلامات مش نص). خاصية <strong>required</strong> معناها إن الحقل ده لازم يتملأ.</li>
+                        <li><strong>&lt;input type="submit"&gt;:</strong> الزرار ده بيعمل إرسال البيانات للموقع.</li>
+                    </ul>
+                
+                    <!-- نموذج التسجيل -->
+                    <h2>2- نموذج التسجيل</h2>
+                    <p>النموذج ده بيستخدم علشان المستخدمين يسجلوا بياناتهم لإنشاء حساب جديد. هنسألهم عن الاسم، البريد الإلكتروني، وكلمة السر.</p>
+                    <form action="#" method="post">
+                        <label for="full-name">الاسم الكامل:</label>
+                        <input type="text" id="full-name" name="full-name" required><br><br>
+                
+                        <label for="email">البريد الإلكتروني:</label>
+                        <input type="email" id="email" name="email" required><br><br>
+                
+                        <label for="password">كلمة السر:</label>
+                        <input type="password" id="password" name="password" required><br><br>
+                
+                        <label for="confirm-password">تأكيد كلمة السر:</label>
+                        <input type="password" id="confirm-password" name="confirm-password" required><br><br>
+                
+                        <input type="submit" value="تسجيل">
+                    </form>
+                
+                    <pre>
+                    &lt;!-- ده الكود الخاص بنموذج التسجيل --&gt;
+                    &lt;form action="#" method="post"&gt;
+                        &lt;label for="full-name"&gt;الاسم الكامل:&lt;/label&gt;
+                        &lt;input type="text" id="full-name" name="full-name" required&gt;&lt;br&gt;&lt;br&gt;
+                
+                        &lt;label for="email"&gt;البريد الإلكتروني:&lt;/label&gt;
+                        &lt;input type="email" id="email" name="email" required&gt;&lt;br&gt;&lt;br&gt;
+                
+                        &lt;label for="password"&gt;كلمة السر:&lt;/label&gt;
+                        &lt;input type="password" id="password" name="password" required&gt;&lt;br&gt;&lt;br&gt;
+                
+                        &lt;label for="confirm-password"&gt;تأكيد كلمة السر:&lt;/label&gt;
+                        &lt;input type="password" id="confirm-password" name="confirm-password" required&gt;&lt;br&gt;&lt;br&gt;
+                
+                        &lt;input type="submit" value="تسجيل"&gt;
+                    &lt;/form&gt;
+                    </pre>
+                    <p><strong>شرح:</strong></p>
+                    <ul>
+                        <li><strong>&lt;input type="email"&gt;:</strong> النوع ده مخصص لاستقبال البريد الإلكتروني، وده هيساعد في التحقق من صحة البريد اللي دخل.</li>
+                        <li><strong>&lt;input type="password"&gt;:</strong> ده بيخفي النص المكتوب في الحقل علشان يبقى سري، وده مناسب لحقل كلمة السر وتأكيد كلمة السر.</li>
+                    </ul>
+                
+                    <!-- نموذج اختيار النوع -->
+                    <h2>3- نموذج اختيار النوع</h2>
+                    <p>النموذج ده بيستخدم علشان يختار المستخدم بين مجموعة من الخيارات المختلفة زي اختيار الجنس.</p>
+                    <form action="#" method="post">
+                        <label for="gender">الجنس:</label><br>
+                        <input type="radio" id="male" name="gender" value="male" required>
+                        <label for="male">ذكر</label><br>
+                        <input type="radio" id="female" name="gender" value="female" required>
+                        <label for="female">أنثى</label><br><br>
+                        
+                        <input type="submit" value="إرسال">
+                    </form>
+                
+                    <pre>
+                    &lt;!-- ده الكود الخاص بنموذج اختيار الجنس --&gt;
+                    &lt;form action="#" method="post"&gt;
+                        &lt;label for="gender"&gt;الجنس:&lt;/label&gt;&lt;br&gt;
+                        &lt;input type="radio" id="male" name="gender" value="male" required&gt;
+                        &lt;label for="male"&gt;ذكر&lt;/label&gt;&lt;br&gt;
+                        &lt;input type="radio" id="female" name="gender" value="female" required&gt;
+                        &lt;label for="female"&gt;أنثى&lt;/label&gt;&lt;br&gt;&lt;br&gt;
+                        
+                        &lt;input type="submit" value="إرسال"&gt;
+                    &lt;/form&gt;
+                    </pre>
+                    <p><strong>شرح:</strong></p>
+                    <ul>
+                        <li><strong>&lt;input type="radio"&gt;:</strong> النوع ده بيستخدم لما يكون فيه مجموعة من الخيارات، والمستخدم يقدر يختار خيار واحد فقط. في الحالة دي، المستخدم يقدر يختار "ذكر" أو "أنثى".</li>
+                        <li><strong>خاصية <strong>name</strong>:</strong> خاصية دي مهمة علشان كل العناصر اللي من نفس النوع (مثلاً كل الخيارات اللي هي للجنس) يتعاملوا مع بعض زي مجموعة واحدة.</li>
+                    </ul>
+                
+                    <!-- نموذج اختيار التاريخ -->
+                    <h2>4- نموذج اختيار التاريخ</h2>
+                    <p>النموذج ده بيستخدم علشان يختار المستخدم تاريخ معين، زي تاريخ ميلاده أو موعد آخر.</p>
+                    <form action="#" method="post">
+                        <label for="dob">تاريخ الميلاد:</label>
+                        <input type="date" id="dob" name="dob" required><br><br>
+                        
+                        <input type="submit" value="إرسال">
+                    </form>
+                
+                    <pre>
+                    &lt;!-- ده الكود الخاص بنموذج اختيار التاريخ --&gt;
+                    &lt;form action="#" method="post"&gt;
+                        &lt;label for="dob"&gt;تاريخ الميلاد:&lt;/label&gt;
+                        &lt;input type="date" id="dob" name="dob" required&gt;&lt;br&gt;&lt;br&gt;
+                        
+                        &lt;input type="submit" value="إرسال"&gt;
+                    &lt;/form&gt;
+                    </pre>
+                    <p><strong>شرح:</strong></p>
+                    <ul>
+                        <li><strong>&lt;input type="date"&gt;:</strong> النوع ده بيستخدم لاختيار تاريخ من التقويم، وده بيسهل على المستخدم اختيار تاريخ ميلاده أو أي تاريخ تاني بسهولة.</li>
+                    </ul>
+                
+                    <!-- صورة توضح النماذج -->
+                    <img src="../img/form.png" alt="Example of Forms">
+                </section>                
+                <!-- End Form -->
+                <!-- strat Text Formatting -->
+                <section id="text-formatting">
+                    <h1>عناصر تنسيق النصوص في HTML</h1>
+                    <p>في HTML، في مجموعة من العناصر اللي بتستخدم لتنسيق النصوص داخل الصفحة. العناصر دي بتساعد في تغيير شكل النصوص أو تمييزها. هنشرح هنا بعض العناصر المهمة مع أمثلة على استخدامها.</p>
+                    
+                    <!-- عنصر <b> - النص العريض -->
+                    <h2>1- النص العريض ( b )</h2>
+                    <p>عنصر يستخدم لتحويل النص إلى عريض (bold)، وبيستخدم عادةً علشان يبرز النصوص المهمة.</p>
+                    <p><b>ده نص عريض</b></p>
+                
+                    <pre>
+                    &lt;b&gt;ده نص عريض&lt;/b&gt;
+                    </pre>
+                    <p><strong>شرح:</strong></p>
+                    <ul>
+                        <li><strong>&lt;b&gt;:</strong> بيخلي النص يظهر بشكل عريض. زي ما بنشوف في الأمثلة، ده بيخلي النص يظهر أكتر وضوحًا أو بروزًا.</li>
+                    </ul>
+                    
+                    <!-- عنصر <strong> - النص المهم -->
+                    <h2>2- النص المهم ( strong )</h2>
+                    <p>عنصر بيستخدم للإشارة إلى أن النص ده مهم. عادةً النص ده بيظهر بشكل عريض، وده بيكون مفيد سواء من الناحية البصرية أو من ناحية محركات البحث.</p>
+                    <p><strong>ده نص مهم</strong></p>
+                
+                    <pre>
+                    &lt;strong&gt;ده نص مهم&lt;/strong&gt;
+                    </pre>
+                    <p><strong>شرح:</strong></p>
+                    <ul>
+                        <li><strong>&lt;strong&gt;:</strong> بيشبه عنصر <b> من حيث الشكل العريض، لكن بيدل على أهمية النص، وبيأثر أيضًا على تحسين محركات البحث (SEO).</li>
+                    </ul>
+                
+                    <!-- عنصر <i> - النص المائل -->
+                    <h2>3- النص المائل ( i )</h2>
+                    <p>عنصر بيستخدم لتحويل النص إلى مائل. بيتم استخدامه عادةً لتمييز أسماء أو كلمات خاصة.</p>
+                    <p><i>ده نص مائل</i></p>
+                
+                    <pre>
+                    &lt;i&gt;ده نص مائل&lt;/i&gt;
+                    </pre>
+                    <p><strong>شرح:</strong></p>
+                    <ul>
+                        <li><strong>&lt;i&gt;:</strong> بيخلي النص يظهر بشكل مائل. في العادة بيستخدم للإشارة إلى شيء خاص مثل الأسماء أو المصطلحات.</li>
+                    </ul>
+                
+                    <!-- عنصر <em> - النص المائل مع التركيز -->
+                    <h2>4- النص المائل مع التركيز ( em )</h2>
+                    <p>عنصر بيعمل نفس تأثير <i> لكن مع إضافة تركيز إضافي على النص. يستخدم هذا العنصر عادةً لتمييز شيء خاص جدًا.</p>
+                    <p><em>ده نص مائل مع تركيز</em></p>
+                
+                    <pre>
+                    &lt;em&gt;ده نص مائل مع تركيز&lt;/em&gt;
+                    </pre>
+                    <p><strong>شرح:</strong></p>
+                    <ul>
+                        <li><strong>&lt;em&gt;:</strong> بيخلي النص مائل زي <i>، لكنه بيوضح أنه أكتر أهمية. بيكون مناسب للإشارة لشيء يحتاج تركيز.</li>
+                    </ul>
+                
+                    <!-- عنصر <u> - النص تحت السطر -->
+                    <h2>5- النص تحت السطر ( u )</h2>
+                    <p>عنصر بيخلي النص يظهر مع خط تحتّه. بيستخدم عادةً لإبراز النصوص أو العناوين.</p>
+                    <p><u>ده نص تحت السطر</u></p>
+                
+                    <pre>
+                    &lt;u&gt;ده نص تحت السطر&lt;/u&gt;
+                    </pre>
+                    <p><strong>شرح:</strong></p>
+                    <ul>
+                        <li><strong>&lt;u&gt;:</strong> بيخلي النص تحت السطر. بيستخدم في بعض الأحيان لتوضيح النصوص المهمة أو العناوين التي تحتاج إلى إبراز.</li>
+                    </ul>
+                
+                    <!-- عنصر <mark> - النص المميز -->
+                    <h2>6- النص المميز ( mark )</h2>
+                    <p>عنصر بيخلي النص يظهر مع خلفية ملونة (عادةً باللون الأصفر) ليبرز النص بشكل مميز.</p>
+                    <p><mark>ده نص مميز</mark></p>
+                
+                    <pre>
+                    &lt;mark&gt;ده نص مميز&lt;/mark&gt;
+                    </pre>
+                    <p><strong>شرح:</strong></p>
+                    <ul>
+                        <li><strong>&lt;mark&gt;:</strong> بيخلي النص يظهر مع خلفية ملونة، وده بيميز النص ويجذب الانتباه.</li>
+                    </ul>
+                
+                    <!-- عنصر <pre> - النص المنسق مسبقًا -->
+                    <h2>7- النص المنسق مسبقًا ( pre )</h2>
+                    <p>عنصر بيحافظ على تنسيق النص زي ما هو، زي الفراغات أو الأسطر الجديدة. بيستخدم غالبًا في الأكواد البرمجية.</p>
+                    <pre>
+                    &lt;pre&gt;
+                    ده نص محفوظ التنسيق
+                    زي الفراغات
+                    والمسافات
+                    &lt;/pre&gt;
+                    </pre>
+                
+                    <p><strong>شرح:</strong></p>
+                    <ul>
+                        <li><strong>&lt;pre&gt;:</strong> بيحافظ على التنسيق المسبق للنص، زي الفراغات أو الأسطر الجديدة. ده مفيد في عرض الأكواد أو النصوص التي تحتاج للتنسيق بشكل دقيق.</li>
+                    </ul>
+                
+                    <!-- عنصر <small> - النص الصغير -->
+                    <h2>8- النص الصغير ( small )</h2>
+                    <p>عنصر بيستخدم علشان يخلّي النص يظهر بشكل أصغر من النص العادي، وبيستخدم في الغالب للحواشي أو الملاحظات.</p>
+                    <p><small>ده نص صغير</small></p>
+                
+                    <pre>
+                    &lt;small&gt;ده نص صغير&lt;/small&gt;
+                    </pre>
+                    <p><strong>شرح:</strong></p>
+                    <ul>
+                        <li><strong>&lt;small&gt;:</strong> بيقلل حجم النص، وبيستخدم عادة في الملاحظات أو المراجع التي لا تكون بحاجة لاهتمام خاص.</li>
+                    </ul>
+                
+                    <!-- عنصر <del> - النص المحذوف -->
+                    <h2>9- النص المحذوف ( del )</h2>
+                    <p>عنصر بيخلي النص يظهر مع خط عليه، وده بيدل على أن النص ده تم حذفه أو تعديله.</p>
+                    <p><del>ده نص محذوف</del></p>
+                
+                    <pre>
+                    &lt;del&gt;ده نص محذوف&lt;/del&gt;
+                    </pre>
+                    <p><strong>شرح:</strong></p>
+                    <ul>
+                        <li><strong>&lt;del&gt;:</strong> بيضع خطًا على النص، وبيستخدم للإشارة إلى أن النص قد تم حذفه أو تغييره.</li>
+                    </ul>
+                
+                    <!-- عنصر <ins> - النص المضاف -->
+                    <h2>10- النص المضاف ( ins )</h2>
+                    <p>عنصر بيخلي النص يظهر مع خط تحتّه، وده بيشير إلى أن النص ده تم إضافته أو تغييره.</p>
+                    <p><ins>ده نص مضاف</ins></p>
+                
+                    <pre>
+                    &lt;ins&gt;ده نص مضاف&lt;/ins&gt;
+                    </pre>
+                    <p><strong>شرح:</strong></p>
+                    <ul>
+                        <li><strong>&lt;ins&gt;:</strong> بيضع خطًا تحت النص، وبيستخدم للإشارة إلى النصوص التي تم إضافتها أو تعديلها.</li>
+                    </ul>
+                
+                    <!-- عنصر <code> - النص البرمجي -->
+                    <h2>11- النص البرمجي ( code )</h2>
+                    <p>عنصر بيستخدم لتمييز النصوص التي تحتوي على أكواد برمجية. بيخلي النص يظهر بشكل مميز (غالبًا بخط مونو).</p>
+                    <p><code>console.log("Hello World");</code></p>
+                
+                    <pre>
+                    &lt;code&gt;console.log("Hello World");&lt;/code&gt;
+                    </pre>
+                    <p><strong>شرح:</strong></p>
+                    <ul>
+                        <li><strong>&lt;code&gt;:</strong> بيستخدم لتمييز الأكواد البرمجية. النص داخل العنصر ده بيظهر غالبًا بخط مونو لإظهار الكود البرمجي بوضوح.</li>
+                    </ul>
+                
+                    <!-- صورة توضح التنسيق -->
+                    <img src="../img/text-formatting.png" alt="Example of Text Formatting">
+                </section>                
+                <!-- End Text Formatting -->
+                <!-- Start Colors -->
+                <section id="colors">
+                    <h1>الألوان والخلفيات في CSS</h1>
+                    <p>في CSS، الألوان والخلفيات بيتم استخدامها لتغيير شكل وتصميم العناصر في الصفحة، بحيث تقدر تضيف مظهر جذاب وسهل للقراءة. الألوان بتستخدم لتلوين النصوص والعناصر، والخلفيات بتحدد لون أو صورة خلف العناصر.</p>
+
+                    <h3>أجزاء الألوان والخلفيات:</h3>
+                    <ul>
+                        <li><strong>color</strong>: ده العنصر اللي بتستخدمه علشان تحدد لون النصوص في العنصر.</li>
+                        <li><strong>background-color</strong>: ده العنصر اللي بتستخدمه علشان تحدد لون الخلفية بتاعت العنصر.</li>
+                        <li><strong>background-image</strong>: ده العنصر اللي بتستخدمه علشان تحدد صورة كخلفية للعنصر.</li>
+                        <li><strong>background-size</strong>: بتحدد حجم الصورة في الخلفية.</li>
+                        <li><strong>background-position</strong>: بتحدد مكان الصورة في الخلفية.</li>
+                        <li><strong>background-repeat</strong>: بتحدد إذا كان الصورة هتتكرر في الخلفية ولا لأ.</li>
+                    </ul>
+
+                    <h3>مثال تطبيقي:</h3>
+                    <p>نفترض إنك عايز تغير لون النصوص في الصفحة ولون الخلفية، وكمان تضيف صورة كخلفية للصفحة.</p>
+
+                    <pre>
+                    body {
+                        color: white; /* بتغير لون النصوص إلى اللون الأبيض */
+                        background-color: #4CAF50; /* بتغير لون الخلفية إلى اللون الأخضر */
+                    }
+
+                    h1 {
+                        background-image: url('background.jpg'); /* بتضيف صورة خلفية على العنوان */
+                        background-size: cover; /* بتخلي الصورة تغطي العنصر بالكامل */
+                        background-position: center; /* بتحدد مكان الصورة في المركز */
+                    }
+                    </pre>
+                    <img src="../img/css.png" alt="Example">
+
+                    <h3>شرح الكود:</h3>
+                    <ul>
+                        <li><strong>color: white;</strong>: بيغير لون النصوص إلى اللون الأبيض.</li>
+                        <li><strong>background-color: #4CAF50;</strong>: بيغير لون الخلفية إلى اللون الأخضر.</li>
+                        <li><strong>background-image: url('background.jpg');</strong>: بيضيف صورة كخلفية للعنوان.</li>
+                        <li><strong>background-size: cover;</strong>: بيخلي الصورة تغطي مساحة العنصر بالكامل.</li>
+                        <li><strong>background-position: center;</strong>: بيحدد مكان الصورة في منتصف العنصر.</li>
+                    </ul>
+
+                    <h3>ليه نستخدم الألوان والخلفيات؟</h3>
+                    <ul>
+                        <li>علشان نحسن مظهر الموقع ونخليه جذاب أكتر.</li>
+                        <li>علشان نساعد في تنظيم المحتوى وجذب الانتباه للأجزاء المهمة.</li>
+                        <li>الألوان بتساهم في تحسين تجربة المستخدم وتسهيل القراءة.</li>
+                        <li>إضافة صور كخلفيات ممكن يخلي الموقع يظهر بشكل مميز ويعكس الهوية البصرية.</li>
+                    </ul>
+                </section>
+                <!-- End Colors -->
+            </section>
+            <!-- End Content -->
+        </main>
+        <!-- End Main -->
+    </div>
+    <!-- End Container -->
+    <!-- Start Footer -->
+    <footer>
+        <p>&copy; 2024 CODE 2 Z. جميع الحقوق محفوظة.</p>
+    </footer>
+    <!-- End Footer -->
+    <!-- up btn -->
+    <a href="#top" id="backToTop">↑ أعلى</a>
+</body>
+
+</html>
