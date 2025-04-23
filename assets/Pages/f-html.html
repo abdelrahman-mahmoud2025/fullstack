@@ -35,6 +35,7 @@
             </div>
             <a href="#semantics">Semantics</a>
             <a href="#metadata">Metadata</a>
+            <a href="#multimedia">Media in Html</a>
             <a href="#entities">الرموز الخاصة</a>
             <a href="#elements">Inlaine & Block Elements</a>
             <a href="#css-intro">CSS</a>
@@ -127,6 +128,72 @@
                         <code>&lt;span&gt;</code>. هذه الممارسة تساعد في إنشاء صفحات ويب أكثر وضوحًا وتنظيمًا.</p>
                 </section>
                 <!-- End Semantics -->
+
+                <!-- Start Multimedia -->
+                <section id="multimedia">
+                    <h2>الوسائط المتعددة (Multimedia): الفيديو والصوت</h2>
+                    <p>HTML5 قدمت عناصر جديدة لدمج الوسائط المتعددة (فيديو وصوت) مباشرة داخل صفحات الويب بدون الحاجة لأي إضافات خارجية مثل Flash.</p>
+                    <p>العناصر <code>&lt;video&gt;</code> و <code>&lt;audio&gt;</code> تعتبر عناصر دلالية لأنها توضح نوع المحتوى بشكل صريح، وتساعد على تحسين تجربة المستخدم والوصول (Accessibility).</p>
+
+                    <h3><code>&lt;video&gt;</code> – عرض مقاطع الفيديو</h3>
+                    <p>يُستخدم لعرض الفيديوهات داخل صفحة الويب. يدعم تشغيل الفيديو مباشرة دون الحاجة لأي برامج إضافية.</p>
+
+                    <h4>الخصائص (Attributes):</h4>
+                    <ul>
+                        <li><strong>controls:</strong> يعرض أدوات التحكم مثل التشغيل، الإيقاف المؤقت، مستوى الصوت.</li>
+                        <li><strong>autoplay:</strong> يبدأ تشغيل الفيديو تلقائيًا عند تحميل الصفحة.</li>
+                        <li><strong>loop:</strong> يُعيد تشغيل الفيديو تلقائيًا عند الانتهاء.</li>
+                        <li><strong>muted:</strong> يجعل الفيديو صامتًا عند تشغيله.</li>
+                        <li><strong>poster:</strong> صورة تُعرض قبل تشغيل الفيديو.</li>
+                        <li><strong>width / height:</strong> لتحديد أبعاد الفيديو.</li>
+                    </ul>
+
+                    <h4>مثال عملي:</h4>
+                    <pre>
+                &lt;video width="500" controls poster="thumb.jpg"&gt;
+                    &lt;source src="movie.mp4" type="video/mp4"&gt;
+                    &lt;source src="movie.ogg" type="video/ogg"&gt;
+                    متصفحك لا يدعم عرض الفيديو.
+                &lt;/video&gt;
+                    </pre>
+
+                    <h4>الفوائد الدلالية:</h4>
+                    <ul>
+                        <li>يوضح أن المحتوى عبارة عن فيديو، مما يساعد محركات البحث.</li>
+                        <li>يحسن تجربة المستخدم ويجعل الصفحة تفاعلية.</li>
+                        <li>يساعد ذوي الاحتياجات الخاصة باستخدام أدوات قراءة الشاشة.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h3><code>&lt;audio&gt;</code> – تشغيل الصوتيات</h3>
+                    <p>يُستخدم لتشغيل ملفات الصوت داخل صفحات الويب مثل الموسيقى، مؤثرات صوتية، أو بودكاست.</p>
+
+                    <h4>الخصائص (Attributes):</h4>
+                    <ul>
+                        <li><strong>controls:</strong> يعرض أدوات التشغيل.</li>
+                        <li><strong>autoplay:</strong> يبدأ الصوت تلقائيًا.</li>
+                        <li><strong>loop:</strong> يعيد تشغيل الملف الصوتي تلقائيًا.</li>
+                        <li><strong>muted:</strong> يجعل الصوت صامتًا عند التشغيل.</li>
+                    </ul>
+
+                    <h4>مثال عملي:</h4>
+                    <pre>
+                &lt;audio controls&gt;
+                    &lt;source src="sound.mp3" type="audio/mpeg"&gt;
+                    &lt;source src="sound.ogg" type="audio/ogg"&gt;
+                    متصفحك لا يدعم تشغيل الصوت.
+                &lt;/audio&gt;
+                    </pre>
+                    
+                    <h4>الفوائد الدلالية:</h4>
+                    <ul>
+                        <li>يبين بوضوح أن العنصر يحتوي على محتوى صوتي.</li>
+                        <li>يُسهل تجربة التصفح لذوي الإعاقة السمعية أو البصرية باستخدام وسائل الوصول.</li>
+                        <li>يساعد في تحسين ترتيب الصفحة في محركات البحث.</li>
+                    </ul>
+                </section>
+                <!-- End Multimedia -->
 
                 <!-- Start Metadata -->
                 <section id="metadata">
