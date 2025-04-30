@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>امتحان HTML</title>
+    <style>
+        body {
+            direction: rtl;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+        }
+
+        .parent {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 30px 0;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 600px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #45a049;
+        }
+
+        .question {
+            margin-bottom: 20px;
+        }
+
+        .question p {
+            font-weight: bold;
+        }
+
+        .answer {
+            display: flex;
+            flex-direction: column;
+            direction: ltr;
+        }
+
+        .answer label {
+            margin: 5px 0;
+        }
+
+        textarea {
+            width: 100%;
+            height: 150px;
+        }
+
+        button {
+            background-color: #45a049;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 20px;
+            transition: all 0.5s;
+        }
+
+        button:hover {
+            background-color: #30b237;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="parent">
+        <div class="container">
+            <h1>امتحان HTML</h1>
+
+            <form id="quizForm">
+                <!-- الأسئلة السابقة -->
+                <div class="question">
+                    <p>س1: ما هو العنصر الذي يُستخدم لتحديد بداية صفحة HTML؟</p>
+                    <div class="answer">
+                        <label><input type="radio" name="q1" value="A"> A) &lt;head&gt;</label>
+                        <label><input type="radio" name="q1" value="B"> B) &lt;html&gt;</label>
+                        <label><input type="radio" name="q1" value="C"> C) &lt;!DOCTYPE html&gt;</label>
+                        <label><input type="radio" name="q1" value="D"> D) &lt;body&gt;</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <p>س2: أي من العناصر التالية يُستخدم لإضافة رابط إلى صفحة ويب في HTML؟</p>
+                    <div class="answer">
+                        <label><input type="radio" name="q2" value="A"> A) &lt;link&gt;</label>
+                        <label><input type="radio" name="q2" value="B"> B) &lt;a&gt;</label>
+                        <label><input type="radio" name="q2" value="C"> C) &lt;href&gt;</label>
+                        <label><input type="radio" name="q2" value="D"> D) &lt;button&gt;</label>
+                    </div>
+                </div>
+
+                <!-- الأسئلة الجديدة -->
+                <!-- اختر من متعدد -->
+                <div class="question">
+                    <p>س3: ما هي الخاصية التي تُستخدم لإضافة نص بديل للصورة في HTML؟</p>
+                    <div class="answer">
+                        <label><input type="radio" name="q3" value="A"> A) `src`</label>
+                        <label><input type="radio" name="q3" value="B"> B) `alt`</label>
+                        <label><input type="radio" name="q3" value="C"> C) `title`</label>
+                        <label><input type="radio" name="q3" value="D"> D) `url`</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <p>س4: أي من العناصر التالية يُستخدم لإنشاء قائمة مرتبة؟</p>
+                    <div class="answer">
+                        <label><input type="radio" name="q4" value="A"> A) &lt;ul&gt;</label>
+                        <label><input type="radio" name="q4" value="B"> B) &lt;ol&gt;</label>
+                        <label><input type="radio" name="q4" value="C"> C) &lt;list&gt;</label>
+                        <label><input type="radio" name="q4" value="D"> D) &lt;li&gt;</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <p>س5: أي من العناصر التالية يُستخدم لتعريف رأس الجدول؟</p>
+                    <div class="answer">
+                        <label><input type="radio" name="q5" value="A"> A) &lt;td&gt;</label>
+                        <label><input type="radio" name="q5" value="B"> B) &lt;tr&gt;</label>
+                        <label><input type="radio" name="q5" value="C"> C) &lt;thead&gt;</label>
+                        <label><input type="radio" name="q5" value="D"> D) &lt;th&gt;</label>
+                    </div>
+                </div>
+
+                <!-- صح وخطأ -->
+                <div class="question">
+                    <p>س6: يمكن استخدام أكثر من &lt;h1&gt; في صفحة HTML واحدة.</p>
+                    <div class="answer">
+                        <label><input type="radio" name="q6" value="true"> صح</label>
+                        <label><input type="radio" name="q6" value="false"> خطأ</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <p>س7: العنصر &lt;p&gt; يمكن أن يحتوي على عناصر أخرى مثل الروابط والصور.</p>
+                    <div class="answer">
+                        <label><input type="radio" name="q7" value="true"> صح</label>
+                        <label><input type="radio" name="q7" value="false"> خطأ</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <p>س8: يمكن استخدام العنصر &lt;div&gt; لتنظيم المحتوى داخل الصفحة بشكل مرن.</p>
+                    <div class="answer">
+                        <label><input type="radio" name="q8" value="true"> صح</label>
+                        <label><input type="radio" name="q8" value="false"> خطأ</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <p>س9: العنصر &lt;form&gt; يُستخدم فقط في النماذج التي تحتوي على حقول نصية.</p>
+                    <div class="answer">
+                        <label><input type="radio" name="q9" value="true"> صح</label>
+                        <label><input type="radio" name="q9" value="false"> خطأ</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <p>س10: لا يُمكن تضمين عنصر &lt;table&gt; داخل عنصر &lt;form&gt;.</p>
+                    <div class="answer">
+                        <label><input type="radio" name="q10" value="true"> صح</label>
+                        <label><input type="radio" name="q10" value="false"> خطأ</label>
+                    </div>
+                </div>
+
+                <!-- الأسئلة المقالية -->
+                <div class="question">
+                    <p>س11: ما هي العناصر الأساسية في تكوين الجدول مع توضيح بسيط لكل عنصر.</p>
+                    <textarea name="q11"></textarea>
+                </div>
+
+                <div class="question">
+                    <p>س12: كيف يمكنك إضافة صورة إلى صفحة HTML مع تحديد عرض وارتفاع الصورة؟</p>
+                    <textarea name="q12"></textarea>
+                </div>
+
+                <button type="button" onclick="submitQuiz()">إرسال الإجابات</button>
+            </form>
+        </div>
+    </section>
+
+    <script>
+        function submitQuiz() {
+            // Get selected answers for multiple choice questions
+            var q1 = document.querySelector('input[name="q1"]:checked');
+            var q2 = document.querySelector('input[name="q2"]:checked');
+            var q3 = document.querySelector('input[name="q3"]:checked');
+            var q4 = document.querySelector('input[name="q4"]:checked');
+            var q5 = document.querySelector('input[name="q5"]:checked');
+            var q6 = document.querySelector('input[name="q6"]:checked');
+            var q7 = document.querySelector('input[name="q7"]:checked');
+            var q8 = document.querySelector('input[name="q8"]:checked');
+            var q9 = document.querySelector('input[name="q9"]:checked');
+            var q10 = document.querySelector('input[name="q10"]:checked');
+            // Get answers for essay questions
+            var q11 = document.querySelector('textarea[name="q11"]').value;
+            var q12 = document.querySelector('textarea[name="q12"]').value;
+            // Check if all multiple choice questions are answered
+            if (!q1 || !q2 || !q3 || !q4 || !q5 || !q6 || !q7 || !q8 || !q9 || !q10) {
+                alert('يرجى الإجابة على جميع الأسئلة');
+                return;
+            }
+            // Create the message
+            var message = "الإجابات:\n";
+            message += "س1: " + q1.value + "\n";
+            message += "س2: " + q2.value + "\n";
+            message += "س3: " + q3.value + "\n";
+            message += "س4: " + q4.value + "\n";
+            message += "س5: " + q5.value + "\n";
+            message += "س6: " + q6.value + "\n";
+            message += "س7: " + q7.value + "\n";
+            message += "س8: " + q8.value + "\n";
+            message += "س9: " + q9.value + "\n";
+            message += "س10: " + q10.value + "\n";
+            message += "س11: " + q11 + "\n";
+            message += "س12: " + q12 + "\n";
+            // Encode the message for URL
+            var encodedMessage = encodeURIComponent(message);
+            // Send the message via WhatsApp API
+            var phoneNumber = '+201277697483'; // Your WhatsApp number
+            var url = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+            // Open WhatsApp with the pre-filled message
+            window.open(url, '_blank');
+        }
+    </script>
+
+</body>
+
+</html>
